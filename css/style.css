@@ -1,50 +1,18 @@
-/*------------------------------------------------------------------
-    Main Style Stylesheet
-    Project:        HTML5 Template
-    Version:        1.0
-    Author:         更多精品Bootstrap模板请访问：http://www.bootstrapmb.com
-    Last change:    10/10/2018
-    Primary use:    Creative, Coporate, Business, Portfolio, Personal
--------------------------------------------------------------------*/
-
-/*------------------------------------------------------------------
-body 
- + WRAP
- + HEADER
- + NAVIGATION
- + BANNER
- + SERVICES
- + OUR FEATURED FOUNDERS
- + BLOG UPDATES 
- + APPOINMENT
- + NEWS FROM BLOG
- + PARTNERS / CLIENTS
- + FOOTER
- + SOCIAL ICONS
- + MEGA MENU
- + 3 MENU LEVEL 
--------------------------------------------------------------------*/
-/*=======================================================
-      IMPORT FILE
-========================================================*/
-@import url("animate.css");
-/*=======================================================
-      THEME STYLING START
-========================================================*/
-* {
+{
 	margin: 0px;
 	padding: 0px;
 }
 body {
-	background: #FFF;
 	font-weight: normal;
 	position: relative;
 	font-size: 14px;
 	font-family: 'Poppins', sans-serif;
+      
 }
 .fonts {
 	font-family: 'Merriweather', serif;
 	font-family: 'Poppins', sans-serif;
+        
 }
 /*=======================================================
       WRAPPER
@@ -63,9 +31,9 @@ body {
 /*=======================================================
       HEADINGS
 ========================================================*/
-h1, h2, h3, h4, h5, h6 {
+h1, h2{
 	font-weight: normal;
-	color: #252525;
+	color: 锛僃6F6F7;
 	font-family: 'Poppins', sans-serif;
 }
 h1 {
@@ -74,22 +42,9 @@ h1 {
 h2 {
 	font-size: 36px;
 }
-h3 {
-	font-size: 30px;
-}
-h4 {
-	font-size: 24px;
-}
-h5 {
-	font-size: 20px;
-}
-h6 {
-	font-size: 16px;
-	font-weight: bold;
-}
 p {
 	font-weight: 400;
-	color: #6f6f6f;
+	color: #222222;
 	line-height: 26px;
 	text-rendering: optimizeLegibility;
 }
@@ -118,7 +73,7 @@ img {
 }
 a {
 	text-decoration: none;
-	color: #141414;
+	color: #888888;
 }
 p.intro-small {
 	width: 80%;
@@ -128,7 +83,7 @@ p.intro-small {
 	text-transform: none !important;
 }
 .text-white {
-	color: #fff !important;
+	color: #222222;
 }
 .text-bold {
 	font-weight: bold !important;

@@ -5,81 +5,116 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="">
-		<link rel="stylesheet" type="text/css" href="../index.css" />
-		<link rel="stylesheet" type="text/css" href="../css/settings.css" media="screen" />
-		<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
-		<link href="css/ionicons.min.css" rel="stylesheet">
-		<link href="css/main.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
-		<link href="css/responsive.css" rel="stylesheet">
-		<link href="font/flaticon.css" rel="stylesheet">
-		<!--script src="../js/cookie.js" type="text/javascript" charset="utf-8"></script-->
-		<script src="modernizr.js"></script>
+        <link rel="stylesheet" href="css/setting.css"> <!-- CSS reset -->
+		<script src="js/modernizr.js"></script>
 
 	</head>
-
+    <header>
+        <div id="cd-cart-trigger"><a class="cd-img-replace" href="#0">Cart</a></div>
+    </header>
 	<body>
-		<div id="loader">
-  		<div class="position-center-center">
-    		<div class="ldr"></div>
-  	</div>
-	</div> 
+<a>My Cart</a><i id="ccount">(4)</i>
 
-<!-- Wrap -->
-		<div id="wrap"> 
-  
-  <!-- TOP Bar -->
-  		<div class="top-bar">
-    		<div class="container-full">
-			<h1>Information</h1>
-			<div class="my cart">
-				<a href="cart.html">My Cart</a><i id="ccount">0</i>
-			</div>
-			<li class="dropdown user-basket"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> (2) Items <i class="icon-basket-loaded"></i> </a>
-            <ul class="dropdown-menu">
-              <li>
-                <div class="media-left">
-                  <div class="cart-img"> <a href="#"> <img class="media-object img-responsive" src="classic tee.jpg" alt="..."> </a> </div>
-                </div>
-                <div class="media-body">
-                  <h6 class="media-heading">Classic Tee</h6>
-                  <span class="QTY">1x$75.00</span> 
-		<span class="size">Size: S</span> </div>
-              </li>
-              <li>
-                <div class="media-left">
-                  <div class="cart-img"> <a href="#"> <img class="media-object img-responsive" src="classic tee.jpg" alt="..."> </a> </div>
-                </div>
-                <div class="media-body">
-                  <h6 class="media-heading">Classic Tee</h6>
-                  <span class="QTY">3x$75.00</span> 
-		<span class="size">Size: L</span> </div>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-			<div class="list">
-				<dl pid="1">
-					<div style="line-height: 60px; height: 60px;">
-					<dt>
-						<img src="../classic-tee.jpg" />
-					</dt>
-					<span>Classic Tee</span>
-					<dd>$<span>75.00</span></dd>
-					<dd>
-						<button>Add To Cart</button>
-					</dd>
-				</dl>
-			</div>
+            <div id="cd-shadow-layer"></div>
+            <div id="cd-cart">
+                <ul class="cd-cart-items">
+                                <li>
+                                    <div class="media-left">
+                                        <div class="cart-img"> <a href="#"> <img class="media-object img-responsive" src="classic-tee.jpg" height="200" width="150" alt="..."/> </a> </div>
+                                    </div>
+                                    <div class="media-body">
+                                        <h5 class="media-heading">Classic Tee</h5>
+                                        <span class="QTY">1x$75.00</span>
+                                        <div class="size">Size: S</div>
+                                    </div>
+                    </li>
+                    
+                    <li>
+                            <div class="media-left">
+                                <div class="cart-img"> <a href="#"> <img class="media-object img-responsive"
+                                    src="classic-tee.jpg" height="200" width="150" alt="..."/> </a> </div>
+                                </div>
+                                 <div class="media-body">
+                                <h5 class="media-heading">Classic Tee</h5>
+                                <span class="QTY">3x$75.00</span>
+                                <div class="size">Size: L</div>
+                            </div>
+                        </li>
+                        </ul>
+        </div>
+        
+                
+           
+           
+           
+			
+            
+        <!-- Content -->
+        <div id="content">
+            
+            <!-- Popular Products -->
+            <section class="padding-top-100 padding-bottom-100">
+                <div class="container">
+                    
+                    <!-- SHOP DETAIL -->
+                    <div class="shop-detail">
+                        <div class="row">
+                            
+                            <!-- Popular Images Slider -->
+                            <div class="col-md-8">
+                                
+                                <!-- Images -->
+                                <div class="row">
+                                    <div class="col-sm-6 margin-bottom-30"> <img class="img-responsive" src="classic-tee.jpg" height="400" width="300"alt=""> </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Content -->
+                            <div class="col-md-4">
+                                <div class="heading">Classic Tee</div>
+                                <div class="price"><small>$</small>75.00</div>
+                               
+                                
+                                <!-- Short By -->
+                                <div class="some-info">
+                                    <ul class="row margin-top-30">
+                                        <li class="col-md-12">
+                                            <!-- size -->
+                                            <select name="Size">
+                                                
+                                                <option>S</option>
+                                                <option>M</option>
+                                                <option>L</option>
+                                                
+                                            </select>
+                                            <!-- Quantity -->
+                                            <div class="quinty">
+                                                <button type="button" class="quantity-left-minus"  data-type="minus" data-field=""> <span>-</span> </button>
+                                                <input type="number" id="quantity" name="quantity" class="form-control input-number" value="1">
+                                                    <button type="button" class="quantity-right-plus" data-type="plus" data-field=""> <span>+</span> </button>
+                                                    </div>
+                                        </li>
+                                        
+                                        <!-- ADD TO CART -->
+                                        <li class="col-md-12"> <a href="#." class="btn">ADD TO CART</a> </li>
 		</div>
 		
-		<script type="text/javascript" src="../js/server.js"></script>
 		
-		<script type="text/javascript" src="../js/index.js"></script>
-	</body>
 
+<!-- GO TO TOP  -->
+<a href="#" class="cd-top"><i class="fa fa-angle-up"></i></a>
+<!-- GO TO TOP End -->
+</div>
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js" ></script>
+<script src="js/own-menu.js"></script>
+<script src="js/jquery.lighter.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
+<script src="http://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="../js/server.js"></script>
+<script type="text/javascript" src="../js/index.js"></script>
+</body>
 </html>
