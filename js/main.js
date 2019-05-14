@@ -79,3 +79,8 @@ function move_navigation( $navigation, $MQ) {
 		$navigation.insertAfter('header');
 	}
 }
+(".cd-shadow-layer").hover(function () {
+                  $(".subNav").eq($(this).index()).show();
+                  }, function () {
+                  $(".subNav").eq($(this).index()).hide();
+                  });
